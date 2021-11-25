@@ -21,7 +21,7 @@ const Slider = (props) => {
 
   return (
     <Fragment>
-      <div className="relative mt-16 bg-gray-100 border-2">
+      {/* <div className="relative mt-16 bg-gray-100 border-2">
         {data.sliderImages.length > 0 ? (
           <img
             className="w-full"
@@ -70,7 +70,11 @@ const Slider = (props) => {
             Shop Now
           </a>
         </div>
-      </div>
+      </div> */}
+      <br />
+      <br />
+      <br />
+      <br />
 
       <OrderSuccessMessage />
       <body>
@@ -362,7 +366,7 @@ const Slider = (props) => {
               {/* <!-- Navigation Area End -->
 
             <!-- Header Right Meta Start --> */}
-              <div class="col-6 col-lg-2 m-auto">
+              {/* <div class="col-6 col-lg-2 m-auto">
                 <div class="header-right-meta text-right">
                   <ul>
                     <li>
@@ -517,7 +521,7 @@ const Slider = (props) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               {/* <!-- Header Right Meta End --> */}
             </div>
           </div>
