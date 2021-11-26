@@ -1,77 +1,44 @@
 import React, { Fragment, useEffect, useContext, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import OrderSuccessMessage from "./OrderSuccessMessage";
-import { HomeContext } from "./";
+import { HomeContext } from "./index";
+
+import { getAllCategory } from "../../admin/categories/FetchApi";
+import { getAllProduct, productByPrice } from "../../admin/products/FetchApi";
 import { sliderImages } from "../../admin/dashboardAdmin/Action";
-import { prevSlide, nextSlide } from "./Mixins";
 import "./slider.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
 import Navbar2 from "../partials/Navbar2";
+const apiURL = process.env.REACT_APP_API_URL;
 const Slider = (props) => {
-  const apiURL = process.env.REACT_APP_API_URL;
-
   const { data, dispatch } = useContext(HomeContext);
   const [slide, setSlide] = useState(0);
-  const history = useHistory();
+
   const location = useLocation();
 
+  const apiURL = process.env.REACT_APP_API_URL;
+
+  const history = useHistory();
+
+  const [categories, setCategories] = useState(null);
+
   useEffect(() => {
-    sliderImages(dispatch);
+    fetchData();
   }, []);
 
+  const fetchData = async () => {
+    try {
+      let responseData = await getAllCategory();
+      if (responseData && responseData.Categories) {
+        setCategories(responseData.Categories);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <Fragment>
-      {/* <div className="relative mt-16 bg-gray-100 border-2">
-        {data.sliderImages.length > 0 ? (
-          <img
-            className="w-full"
-            src={`${apiURL}/uploads/customize/${data.sliderImages[slide].slideImage}`}
-            alt="sliderImage"
-          />
-        ) : (
-          ""
-        )}
-        <svg
-          onClick={(e) => prevSlide(data.sliderImages.length, slide, setSlide)}
-          className={`z-10 absolute top-0 left-0 mt-64 flex justify-end items-center box-border flex justify-center w-12 h-12 text-gray-700  cursor-pointer hover:text-yellow-700`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-        <svg
-          onClick={(e) => nextSlide(data.sliderImages.length, slide, setSlide)}
-          className={`z-10 absolute top-0 right-0 mt-64 flex justify-start items-center box-border flex justify-center w-12 h-12 text-gray-700 cursor-pointer hover:text-yellow-700`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <a
-            href="#shop"
-            style={{ background: "#303031" }}
-            className="cursor-pointer box-border text-2xl text-white px-4 py-2 rounded"
-          >
-            Shop Now
-          </a>
-        </div>
-      </div> */}
       <br />
       <br />
       <br />
@@ -255,6 +222,7 @@ const Slider = (props) => {
         {/* <!--== New Collection Area End ==-->
 
 <!--== Products by Category Area Start ==--> */}
+
         <div id="product-categories-area">
           <div class="ruby-container">
             <div class="row">
@@ -271,10 +239,51 @@ const Slider = (props) => {
                               class="img-fluid"
                             />
                           </a>
-
-                          <figcaption class="category-name">
-                            <a href="#">Shop For Women</a>
-                          </figcaption>
+                          <div
+                          // className={`${
+                          //   data.categoryListDropdown ? "" : "hidden"
+                          // } my-4`}
+                          >
+                            {categories && categories.length > 0 ? (
+                              categories.map((item, index) => {
+                                return (
+                                  <Fragment key={index}>
+                                    <div
+                                      onClick={(e) =>
+                                        history.push(
+                                          `/products/category/${item._id}`
+                                        )
+                                      }
+                                      className="col-span-1 m-2 flex flex-col items-center justify-center space-y-2 cursor-pointer"
+                                    >
+                                      <figcaption class="category-name">
+                                        <a
+                                          onClick={(e) =>
+                                            history.push(
+                                              `/products/category/${item._id}`
+                                            )
+                                          }
+                                        >
+                                          Shop For Women
+                                        </a>
+                                      </figcaption>
+                                      {/* <img
+                                        src={`${apiURL}/uploads/categories/${item.cImage}`}
+                                        alt="pic"
+                                      /> */}
+                                      {/* <div className="font-medium">
+                                        {item.cName}
+                                      </div> */}
+                                    </div>
+                                  </Fragment>
+                                );
+                              })
+                            ) : (
+                              <div className="text-xl text-center my-4">
+                                No Category
+                              </div>
+                            )}
+                          </div>
                         </figure>
                       </div>
                     </div>
