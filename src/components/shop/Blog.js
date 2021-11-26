@@ -82,7 +82,7 @@ const Blog = () => {
                         <i class="fa fa-user"></i> Albert Flores
                       </a>
                       <a href="#">
-                        <i class="fa fa-calendar"></i> 08/20/2018
+                        <i class="fa fa-calendar"></i> 04/02/2021
                       </a>
                     </div>
                   </div>
@@ -90,42 +90,43 @@ const Blog = () => {
 
                 <div class="post-content">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit.
-                    Culpa, dolorem earum eius eum, exercitationem explicabo
-                    facilis harum sillo ipsum isted odio placeated quaerated
-                    quisquam ratione suscipit tempora temporibus veniam. Ab ad
-                    aliquam amet at blanditiis delectus distinctio dolorem eaque
-                    eum, eveniet id, non nulla obcaecati perferendis ratione
-                    repellat sapiente soluta.
+                    Shipping has a huge impact on the success of an eCommerce
+                    store. A study conducted by Business Insider discovered that
+                    higher shipping costs are the #1 cause of all abandoned
+                    shopping carts online. Shipping costs more cart abandonment
+                    You would obviously want to select products that you can
+                    ship at lower costs or for free. If you only plan to sell
+                    digital products (music, video, software, ebook, etc), then
+                    you don’t have to worry about shipping because the products
+                    will be downloaded by customers online.
                   </p>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisici elit.
-                    Culpa, dolorem earum eius eum, exercitationem explicabo
-                    facilis harum sillo ipsum isted odio placeated quaerated
-                    quisquam ratione suscipit tempora temporibus veniam. Ab ad
-                    aliquam amet at blanditiis delectus distinctio dolorem eaque
-                    eum, eveniet id, non nulla obcaecati perferendis ratione
-                    repellat sapiente soluta.
+                    3. Inventory Do you want to manage inventory and keep
+                    products stocked? For that, you will need storage space and
+                    inventory management through your eCommerce software.
+                    Keeping products in stock will increase your cost of
+                    business. On the other hand, drop-shipping solves this
+                    problem. You can select products that are shipped directly
+                    by the manufacturer or supplier.
                   </p>
 
                   <blockquote class="blockquote">
                     <p>
-                      Placeated quaerated quisquam rationed suscipite tempora
-                      temporibus veniam. Ab ad aliquam amet at blanditiis
-                      delectus distinctio dolorem eaque eum, eveniet id, non
-                      nulla obcaecati perferendis ratione repellat sapiente
-                      soluta
+                      You’ll need to find products where you can offer a
+                      competitive price to your customers. If the product you
+                      are selling is more expensive than your competitors, then
+                      obviously that would discourage many first time buyers.
                     </p>
                   </blockquote>
 
                   <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as posed to
-                    using Content here, content here', making it look like
-                    readable
+                    These are products that everyone needs and are sold by many
+                    small and large stores without any difference in quality.
+                    For example, everyday products like soap, detergent, cereal,
+                    and more. These products are made by some of the largest
+                    brands in the retail industry and are available widely with
+                    little to no difference in price.
                   </p>
 
                   <img
@@ -135,12 +136,10 @@ const Blog = () => {
                   />
 
                   <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as posed to
-                    using Content here, content here', making it look like
-                    readable
+                    These are products that are unique or hand-made, available
+                    in limited stocks, and from specific suppliers. Think of
+                    home-made soaps, novelty t-shirts, ceramics, gift items,
+                    software, and countless other products.
                   </p>
                 </div>
 
@@ -197,12 +196,12 @@ const Blog = () => {
                         </a>
                       </div>
                       <a href="#" class="comment-date">
-                        19 JULY 2017, 10:05 PM
+                        19 JULY 2021, 10:05 PM
                       </a>
                       <p>
-                        On the other hand, we with righteous indignation and
-                        dislike men ware sobeguil andlo demized by the charms of
-                        pleasure of the moment.
+                        There are even unique platforms stores where you can
+                        find small vendors who make beautiful products and would
+                        love to partner up with other store
                       </p>
                     </div>
                   </div>
@@ -219,18 +218,17 @@ const Blog = () => {
                     </div>
                     <div class="comment-info mt-3 mt-md-0">
                       <div class="comment-info-top d-flex justify-content-between">
-                        <h3>Alex Tuntuni</h3>
+                        <h3>Alex </h3>
                         <a href="#" class="btn-add-to-cart">
                           <i class="fa fa-reply"></i> Reply
                         </a>
                       </div>
                       <a href="#" class="comment-date">
-                        19 JULY 2017, 10:05 PM
+                        19 JULY 2021, 10:05 PM
                       </a>
                       <p>
-                        On the other hand indignation and dislike men ware
-                        sobeguil andlo demized by the charms of pleasure of the
-                        moment.
+                        Since these products are not widely available, they give
+                        you a competitive advantage.
                       </p>
                     </div>
                   </div>
@@ -247,7 +245,7 @@ const Blog = () => {
                     </div>
                     <div class="comment-info mt-3 mt-md-0">
                       <div class="comment-info-top d-flex justify-content-between">
-                        <h3>Dig Kamla</h3>
+                        <h3>Maria</h3>
                         <a href="#" class="btn-add-to-cart">
                           <i class="fa fa-reply"></i> Reply
                         </a>
@@ -348,11 +346,11 @@ const Blog = () => {
                         <div class="product-details">
                           <h2>
                             <a href="single-blog.html">
-                              Lorem ipsum is dolor sit amet, consectetur
-                              adipisicing elit.
+                              Nothing drives more passion when you build
+                              something useful and want others to use it.
                             </a>
                           </h2>
-                          <span class="price">20, Aug 2018</span>
+                          <span class="price">20, Aug 2019</span>
                           <a href="#" class="btn-add-to-cart">
                             Read More <i class="fa fa-long-arrow-right"></i>
                           </a>
@@ -395,11 +393,11 @@ const Blog = () => {
                         <div class="product-details">
                           <h2>
                             <a href="single-blog.html">
-                              Lorem ipsum is dolor sit amet, consectetur
-                              adipisicing elit.
+                              Following your passion allows you to look deeply
+                              into products and find ideas that offer real value
                             </a>
                           </h2>
-                          <span class="price">20, Aug 2018</span>
+                          <span class="price">20, Aug 2019</span>
                           <a href="#" class="btn-add-to-cart">
                             Read More <i class="fa fa-long-arrow-right"></i>
                           </a>

@@ -1051,7 +1051,7 @@ const Slider = (props) => {
                       </p>
 
                       <h3 class="client-name">Luis Manrata</h3>
-                      <span class="client-email">you@email.here</span>
+                      <span class="client-email">Manrata@email.com</span>
                     </div>
                   </div>
                 </div>
@@ -1099,12 +1099,17 @@ const Slider = (props) => {
 
                     <div class="blog-details">
                       <h3>
-                        <a href="single-blog.html">Mirum est notare quam</a>
+                        <a href="single-blog.html">
+                          {" "}
+                          Winning Products Every Time
+                        </a>
                       </h3>
-                      <span class="post-date">20/June/2018</span>
+                      <span class="post-date">21/June/2021</span>
                       <p>
-                        Mirum est notare quam littera gothica, quam nunc putamus
-                        parum claram, anteposuerit litterarum.
+                        These could be products that you personally love and
+                        passionately recommend to your family and friends. These
+                        could be products related to a hobby or activity that
+                        you are passionate about.
                       </p>
                       <a href="single-blog.html" class="btn-long-arrow">
                         Read More
@@ -1134,12 +1139,14 @@ const Slider = (props) => {
 
                     <div class="blog-details">
                       <h3>
-                        <a href="single-blog.html">Mirum est notare quam</a>
+                        <a href="single-blog.html">Commoditized Products</a>
                       </h3>
-                      <span class="post-date">20/June/2018</span>
+                      <span class="post-date">12/February/2020</span>
                       <p>
-                        Mirum est notare quam littera gothica, quam nunc putamus
-                        parum claram, anteposuerit litterarum.
+                        These are products that everyone needs and are sold by
+                        many small and large stores without any difference in
+                        quality. For example, everyday products like soap,
+                        detergent, cereal, and more.
                       </p>
                       <a href="single-blog.html" class="btn-long-arrow">
                         Read More
@@ -1169,12 +1176,15 @@ const Slider = (props) => {
 
                     <div class="blog-details">
                       <h3>
-                        <a href="single-blog.html">Mirum est notare quam</a>
+                        <a href="single-blog.html">Niche Products</a>
                       </h3>
-                      <span class="post-date">20/June/2018</span>
+                      <span class="post-date">11/March/2021</span>
                       <p>
-                        Mirum est notare quam littera gothica, quam nunc putamus
-                        parum claram, anteposuerit litterarum.
+                        These are products that are unique or hand-made,
+                        available in limited stocks, and from specific
+                        suppliers. Think of home-made soaps, novelty t-shirts,
+                        ceramics, gift items, software, and countless other
+                        products.
                       </p>
                       <a href="single-blog.html" class="btn-long-arrow">
                         Read More

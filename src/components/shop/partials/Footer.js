@@ -63,7 +63,7 @@ const Footer = (props) => {
                     </figure>
                     <div class="callto-info">
                       <h2>SHOPPING GUIDE</h2>
-                      <p>Quis Eum Iure Reprehenderit</p>
+                      <p></p>
                     </div>
                   </div>
                   {/* <!-- Single Call-to Action End --> */}
@@ -82,11 +82,13 @@ const Footer = (props) => {
                 <div class="col-lg-12 text-center">
                   <div class="follow-content-wrap">
                     <a href="index.html" class="logo">
-                      <img src="assets/img/logo.png" alt="logo" />
+                      <img
+                        src="https://i.ibb.co/5hXkJ7g/logo2.jpg"
+                        alt="logo"
+                      />
                     </a>
                     <p>
-                      Eodem modo typi, qui nunc nobis videntur parum clari,
-                      fiant sollemnes in futurum
+                      Best online shopping store for all your fashion needs.
                     </p>
 
                     <div class="footer-social-icons">
