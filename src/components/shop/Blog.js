@@ -254,9 +254,9 @@ const Blog = () => {
                         19 JULY 2017, 10:05 PM
                       </a>
                       <p>
-                        On the other hand, we with righteous indignation and
-                        dislike men ware sobeguil andlo demized by the charms of
-                        pleasure of the moment.
+                        These are products that everyone needs and are sold by
+                        many small and large stores without any difference in
+                        quality
                       </p>
                     </div>
                   </div>
