@@ -3,6 +3,7 @@ import {
   Home,
   WishList,
   Shop,
+  Contact,
   ProtectedRoute,
   AdminProtectedRoute,
   CartProtectedRoute,
@@ -24,6 +25,7 @@ const Routes = (props) => {
         {/* Shop & Public Routes */}
         <Route exact path="/" component={Home} />
         <Route exact path="/shop" component={Shop} />
+        <Route exact path="/contact" component={Contact} />
         <Route exact path="/wish-list" component={WishList} />
         <Route exact path="/products/:id" component={ProductDetails} />
         <Route

@@ -1,6 +1,8 @@
 import Home from "./home";
 import Shop from "./Shop";
+import Contact from "./Contact";
 import WishList from "./wishlist";
+import Navbar2 from "./partials/Navbar2";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import AdminProtectedRoute from "./auth/AdminProtectedRoute";
 import CartProtectedRoute from "./auth/CartProtectedRoute";
@@ -16,6 +18,8 @@ export {
   Home,
   Shop,
   WishList,
+  Navbar2,
+  Contact,
   ProtectedRoute,
   AdminProtectedRoute,
   CartProtectedRoute,
