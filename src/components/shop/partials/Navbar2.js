@@ -227,21 +227,7 @@ function Nabvar2() {
               </ul>
             </li>
             <li class="dropdown-show">
-              <a href="#">Blog</a>
-              <ul class="dropdown-nav">
-                <li>
-                  <a href="blog.html">Blog Right Sidebar</a>
-                </li>
-                <li>
-                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                </li>
-                <li>
-                  <a href="blog-grid.html">Blog Grid Layout</a>
-                </li>
-                <li>
-                  <a href="single-blog.html">Blog Details</a>
-                </li>
-              </ul>
+              <a onClick={(e) => history.push("/blog")}>Blog</a>
             </li>
             <li>
               <a onClick={(e) => history.push("/contact")}>Contact US</a>

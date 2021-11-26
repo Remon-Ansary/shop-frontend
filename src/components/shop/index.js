@@ -1,5 +1,6 @@
 import Home from "./home";
 import Shop from "./Shop";
+import Blog from "./Blog";
 import Contact from "./Contact";
 import WishList from "./wishlist";
 import Navbar2 from "./partials/Navbar2";
@@ -17,6 +18,7 @@ import CheckoutPage from "./order/CheckoutPage";
 export {
   Home,
   Shop,
+  Blog,
   WishList,
   Navbar2,
   Contact,
